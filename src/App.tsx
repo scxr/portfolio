@@ -256,6 +256,21 @@ For the backend Bun is used along with ElysiaJs for maximum speed and response t
 There is far more detail in the repo, feel free to check it out!
 
 `
+  },
+  {
+    id: 'portfolio',
+    title: 'This Website',
+    description: 'This website is built with React, Typescript, and Tailwind CSS.',
+    technologies: ["React", "Typescript", "Vite"],
+    githubUrl: 'https://github.com/scxr/portfolio',
+    demoUrl: 'https://github.com/scxr/portfolio/blob/main/readme.md',
+    infoContent: `
+
+## Overview
+This website is built with React, Typescript, and Vite. It is a portfolio website that displays my projects and information about me. I also plan to use this for blog posts and other content in the future.
+
+
+`
   }
 ];
 
