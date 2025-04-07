@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+:root {
+  --retro-primary: #a8c0ff;
+  --retro-secondary: #8ec5fc;
+  --retro-accent: #ffe5b4;
+  --retro-bg: #2a2d3e;
+  --retro-text: #e2e8f0;
+  --retro-border: #4a5568;
+  --retro-hover: #3a4255;
+  --font-retro: 'Press Start 2P', cursive;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-main: 'IBM Plex Mono', monospace;
+}
+
+.retro-container {
+  background-color: var(--retro-bg);
+  color: var(--retro-text);
+  font-family: var(--font-main);
+  min-height: 100vh;
+  padding: 2rem;
+  line-height: 1.8;
+}
+
+.retro-title {
+  color: var(--retro-primary);
+  text-shadow: 2px 2px 0 var(--retro-secondary);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: var(--font-retro);
+}
+
+.retro-card {
+  background-color: var(--retro-bg);
+  border: 2px solid var(--retro-border);
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: 4px 4px 0 var(--retro-secondary);
+  transition: all 0.3s ease;
+}
+
+.retro-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--retro-primary);
+  margin-bottom: 1rem;
+}
+
+.retro-card p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--retro-text);
+}
+
+.retro-card:hover {
+  transform: translate(-2px, -2px);
+  border-color: var(--retro-primary);
+}
+
+.retro-button {
+  background-color: var(--retro-primary);
+  color: var(--retro-bg);
+  border: 2px solid var(--retro-border);
+  padding: 0.8rem 1.5rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.retro-button:hover {
+  background-color: var(--retro-secondary);
+  transform: translate(-1px, -1px);
+}
+
+.retro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .retro-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .retro-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.retro-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.retro-nav a {
+  color: var(--retro-text);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--retro-border);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+}
+
+.retro-nav a:hover {
+  background-color: var(--retro-hover);
+  color: var(--retro-primary);
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(1px, 1px);
+  }
+  80% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.retro-glitch {
+  animation: glitch 2s infinite;
+  animation-play-state: paused;
+}
+
+.retro-glitch:hover {
+  animation-play-state: running;
+}
+
+.retro-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--retro-primary) var(--retro-bg);
+}
+
+.retro-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.retro-scroll::-webkit-scrollbar-track {
+  background: var(--retro-bg);
+}
+
+.retro-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--retro-primary);
+  border-radius: 3px;
+} 

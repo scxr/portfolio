@@ -1,0 +1,147 @@
+.project-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--retro-text);
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: var(--retro-primary);
+  }
+  
+  .back-arrow {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .project-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border: 2px solid var(--retro-border);
+    margin-bottom: 2rem;
+  }
+  
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tech-tag {
+    background-color: var(--retro-hover);
+    color: var(--retro-text);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    border: 1px solid var(--retro-border);
+  }
+  
+  .markdown-content {
+    background-color: var(--retro-bg);
+    padding: 2rem;
+    border: 2px solid var(--retro-border);
+    border-radius: 4px;
+  }
+  
+  .markdown-content h1,
+  .markdown-content h2,
+  .markdown-content h3 {
+    color: var(--retro-primary);
+    font-family: var(--font-heading);
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+  }
+  
+  .markdown-content h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  
+  .markdown-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .markdown-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .markdown-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .markdown-content ul,
+  .markdown-content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .markdown-content li {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  .markdown-content code {
+    background-color: var(--retro-hover);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: var(--font-main);
+    color: var(--retro-accent);
+    font-size: 1rem;
+  }
+  
+  .markdown-content pre {
+    background-color: var(--retro-hover);
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--retro-border);
+  }
+  
+  .markdown-content pre code {
+    background-color: transparent;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .project-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .project-links {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
