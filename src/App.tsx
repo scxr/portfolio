@@ -260,7 +260,7 @@ There is far more detail in the repo, feel free to check it out!
   {
     id: 'portfolio',
     title: 'This Website',
-    description: 'This website is built with React, Typescript, and Tailwind CSS.',
+    description: 'This website is built with React, Typescript, and Vite.',
     technologies: ["React", "Typescript", "Vite"],
     githubUrl: 'https://github.com/scxr/portfolio',
     demoUrl: 'https://github.com/scxr/portfolio/blob/main/readme.md',
@@ -271,6 +271,42 @@ This website is built with React, Typescript, and Vite. It is a portfolio websit
 
 
 `
+  },
+  {
+    id: "win95_site",
+    title: "Windows 95 Emulator Site",
+    description: "A website that emulates the Windows 95 interface.",
+    technologies: ["NextJS", "CSS"],
+    githubUrl: 'https://github.com/scxr/win95',
+    demoUrl: 'http://win95-scxr1.vercel.app/',
+    infoContent: `
+
+## Overview
+This is a website that emulates the Windows 95 interface. It is built with NextJS and CSS.
+
+## Technical Details
+This website was built as part of an ARG I was planning on doing but never got around to it. It is built with NextJS and CSS. It has multiple features like a start menu, desktop icons, a task bar and more. The windows are draggable and such, and you are able to open multiple windows at once.
+
+## Features
+- Start menu
+- Desktop icons
+- Task bar
+- Multiple windows at once
+- Draggable windows
+- Shutdown button
+
+## Future Plans
+- Add more features
+- Add more windows
+- Add more icons
+- Add more animations
+- Add more styles
+- Maybe complete the ARG
+
+
+  `
+
+
   }
 ];
 
