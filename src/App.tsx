@@ -353,9 +353,9 @@ const MainContent = () => {
           <div className="retro-card">
             <p>Feel free to reach out to me through any of these channels:</p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
-              <button className="retro-button">EMAIL</button>
-              <button className="retro-button">GITHUB</button>
-              <button className="retro-button">LINKEDIN</button>
+              <button className="retro-button" onClick={() => window.location.href = 'mailto:cswilson326@gmail.com'}>EMAIL</button>
+              <button className="retro-button" onClick={() => window.location.href = 'https://github.com/scxr'}>GITHUB</button>
+              <button className="retro-button" onClick={() => window.location.href = 'https://www.linkedin.com/in/charlie-scxr/'}>LINKEDIN</button>
             </div>
           </div>
         </section>

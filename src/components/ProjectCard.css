@@ -22,6 +22,14 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .info-modal-content {
+    padding: 1rem;
+    width: 95%;
+    max-height: 90vh;
+  }
+}
+
 .close-button {
   position: absolute;
   top: 1rem;
@@ -45,6 +53,34 @@
   font-family: var(--font-main);
   font-size: 1rem;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .markdown-content {
+    font-size: 0.9rem;
+  }
+
+  .markdown-content h1,
+  .markdown-content h2,
+  .markdown-content h3 {
+    font-size: 1rem;
+    margin: 1rem 0 0.8rem;
+  }
+
+  .markdown-content pre {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .markdown-content pre code {
+    font-size: 0.8rem;
+  }
+
+  .close-button {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.2rem;
+  }
 }
 
 .markdown-content h1,

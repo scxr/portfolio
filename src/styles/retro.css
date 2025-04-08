@@ -22,6 +22,12 @@
   line-height: 1.8;
 }
 
+@media (max-width: 768px) {
+  .retro-container {
+    padding: 1rem;
+  }
+}
+
 .retro-title {
   color: var(--retro-primary);
   text-shadow: 2px 2px 0 var(--retro-secondary);
@@ -30,6 +36,14 @@
   text-align: center;
   letter-spacing: 2px;
   font-family: var(--font-retro);
+}
+
+@media (max-width: 768px) {
+  .retro-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
 }
 
 .retro-card {
@@ -93,6 +107,8 @@
 @media (max-width: 768px) {
   .retro-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
   }
 }
 
@@ -101,6 +117,7 @@
   justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .retro-nav a {
@@ -117,6 +134,20 @@
 .retro-nav a:hover {
   background-color: var(--retro-hover);
   color: var(--retro-primary);
+}
+
+@media (max-width: 768px) {
+  .retro-nav {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .retro-nav a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @keyframes glitch {
@@ -166,4 +197,39 @@
 .retro-scroll::-webkit-scrollbar-thumb {
   background-color: var(--retro-primary);
   border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .retro-card {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  
+  .retro-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .retro-card p {
+    font-size: 1rem;
+  }
+}
+
+#contact .retro-card div {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  #contact .retro-card div {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .retro-button {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
 } 
