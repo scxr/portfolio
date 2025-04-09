@@ -263,7 +263,7 @@ There is far more detail in the repo, feel free to check it out!
     description: 'This website is built with React, Typescript, and Vite.',
     technologies: ["React", "Typescript", "Vite"],
     githubUrl: 'https://github.com/scxr/portfolio',
-    demoUrl: 'https://github.com/scxr/portfolio/blob/main/readme.md',
+    demoUrl: 'https://n3mo.dev',
     infoContent: `
 
 ## Overview
@@ -355,7 +355,7 @@ const MainContent = () => {
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
               <button className="retro-button" onClick={() => window.location.href = 'mailto:cswilson326@gmail.com'}>EMAIL</button>
               <button className="retro-button" onClick={() => window.location.href = 'https://github.com/scxr'}>GITHUB</button>
-              <button className="retro-button" onClick={() => window.location.href = 'https://www.linkedin.com/in/charlie-scxr/'}>LINKEDIN</button>
+              <button className="retro-button" onClick={() => window.location.href = 'https://www.linkedin.com/in/charlie-wilson-b2a483186/'}>LINKEDIN</button>
             </div>
           </div>
         </section>
